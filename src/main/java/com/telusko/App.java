@@ -16,7 +16,5 @@ public class App
         Alien obj2 = (Alien) context.getBean("alien1");
         System.out.println(obj2.age);
         //obj2.code();
-
-        //THEY BOTH ARE THE SAME OBJECT
     }
 }

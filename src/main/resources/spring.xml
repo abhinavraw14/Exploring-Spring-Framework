@@ -6,7 +6,7 @@
           https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Simple Bean -->
-    <bean id="alien1" class="com.telusko.Alien">
+    <bean id="alien1" class="com.telusko.Alien" scope="prototype">
         <!--    here we create bean tags -->
 
     </bean>
