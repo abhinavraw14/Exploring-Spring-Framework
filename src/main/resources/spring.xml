@@ -8,7 +8,9 @@
     <!-- Simple Bean -->
     <bean id="alien1" class="com.telusko.Alien">
         <!--    here we create bean tags -->
-        <property name="age" value="21"></property> //setter injection
+        <!--    setter injection    -->
+        <property name="age" value="21"></property>
+
     </bean>
 
     <bean id="lap" class="com.telusko.Laptop">
