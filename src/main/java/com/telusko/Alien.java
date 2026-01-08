@@ -4,6 +4,12 @@ public class Alien {
 
     private int age;
     private Laptop lap;
+
+    public Alien(int age, Laptop lap){
+        System.out.println("parameterised constructor called ");
+        this.age = age;
+        this.lap = lap;
+    }
     public int getAge() {
         return age;
     }
