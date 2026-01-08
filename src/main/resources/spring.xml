@@ -10,12 +10,11 @@
         <!--    here we create bean tags -->
         <!--    setter injection    -->
         <property name="age" value="21"></property>
-
+        <property name="lap" ref="lap1"></property>
     </bean>
 
-    <bean id="lap" class="com.telusko.Laptop">
-        <!--    here we create bean tags -->
-
+    <bean id="lap1" class="com.telusko.Laptop">
+        <!--        bean for the laptop-->
     </bean>
 
 
