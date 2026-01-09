@@ -7,7 +7,7 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Alien obj1 = (Alien) context.getBean("alien1");
+        Alien obj1 = context.getBean("alien1", Alien.class);
         //obj1.setAge(21);
         System.out.println(obj1.getAge());
         obj1.code();
@@ -16,6 +16,6 @@ public class App
 //        System.out.println(obj2.age);
 //        //obj2.code();
 
-        Desktop obj = (Desktop) context.getBean("com2"); //object creation
+        Desktop obj = context.getBean("com2", Desktop.class); //object creation
     }
 }
