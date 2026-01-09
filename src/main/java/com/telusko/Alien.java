@@ -3,13 +3,17 @@ package com.telusko;
 public class Alien {
 
     private int age;
-    private Laptop lap;
+    private Computer com;
 
-    public Alien(int age, Laptop lap){
-        System.out.println("parameterised constructor called ");
-        this.age = age;
-        this.lap = lap;
+    public Alien(){
+        System.out.println("Object created");
     }
+
+//    public Alien(int age, Computer com){
+//        System.out.println("parameterised constructor called ");
+//        this.age = age;
+//        this.lap = lap;
+//    }
     public int getAge() {
         return age;
     }
@@ -17,20 +21,17 @@ public class Alien {
         System.out.println("setter called");
         this.age = age;
     }
-    public Alien(){
 
-        System.out.println("Object Created");
+    public Computer getCom() {
+        return com;
     }
+
+    public void setCom(Computer com) {
+        this.com = com;
+    }
+
     public void code(){
         System.out.println("Coding");
-        lap.compile();
-    }
-
-    public Laptop getLap() {
-        return lap;
-    }
-
-    public void setLap(Laptop lap) {
-        this.lap = lap;
+        com.compile();
     }
 }
