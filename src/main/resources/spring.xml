@@ -13,7 +13,7 @@
 <!--        <constructor-arg type="com.telusko.Laptop" value="21"></constructor-arg>-->
 <!--        <constructor-arg type="int" ref="lap1"></constructor-arg>-->
         <property name="age" value="21"></property>
-<!--        <property name="com" ref="com1"></property>-->
+        <property name="com" ref="com1"></property>
 
     </bean>
 
@@ -21,7 +21,7 @@
     <bean id="com1" class="com.telusko.Laptop" primary="true">
 
     </bean>
-    <bean id="com2" class="com.telusko.Desktop">
+    <bean id="com2" class="com.telusko.Desktop" lazy-init="true"> <!--    //desktop object will only be created when you use it.-->
 
     </bean>
 
