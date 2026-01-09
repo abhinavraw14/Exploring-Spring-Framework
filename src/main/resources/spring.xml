@@ -6,18 +6,24 @@
           https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Simple Bean -->
-    <bean id="alien1" class="com.telusko.Alien">
+    <bean id="alien1" class="com.telusko.Alien" autowire="byType">
 <!--        Constructor Injection follows the sequence not the type to verify the injection or you can either mention the type explicitly
             we can even use name, index and an array of contructor attribute as an annotation of the attributes
 -->
-        <constructor-arg type="com.telusko.Laptop" value="21"></constructor-arg>
-        <constructor-arg type="int" ref="lap1"></constructor-arg>
+<!--        <constructor-arg type="com.telusko.Laptop" value="21"></constructor-arg>-->
+<!--        <constructor-arg type="int" ref="lap1"></constructor-arg>-->
+        <property name="age" value="21"></property>
+<!--        <property name="com" ref="com1"></property>-->
 
     </bean>
 
-    <bean id="lap1" class="com.telusko.Laptop">
+
+    <bean id="com1" class="com.telusko.Laptop">
         <!--        bean for the laptop-->
     </bean>
+<!--    <bean id="com2" class="com.telusko.Desktop">-->
+<!--        &lt;!&ndash;        bean for the laptop&ndash;&gt;-->
+<!--    </bean>-->
 
 
 </beans>
