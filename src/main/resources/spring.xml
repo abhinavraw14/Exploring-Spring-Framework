@@ -18,12 +18,12 @@
     </bean>
 
 
-    <bean id="com1" class="com.telusko.Laptop">
-        <!--        bean for the laptop-->
+    <bean id="com1" class="com.telusko.Laptop" primary="true">
+
     </bean>
-<!--    <bean id="com2" class="com.telusko.Desktop">-->
-<!--        &lt;!&ndash;        bean for the laptop&ndash;&gt;-->
-<!--    </bean>-->
+    <bean id="com2" class="com.telusko.Desktop">
+
+    </bean>
 
 
 </beans>
